@@ -1,27 +1,46 @@
 <section class="bg-black h-screen w-screen text-center relative overflow-hidden">
-    <div class="z-30 relative h-full flex flex-col">
-        <header>
-            <h2 class="text-black pt-40 text-4xl font-medium z-40">
-                Model Y
-            </h2>
-    
-            <p class="text-black text-sm z-40 underline">Concertar una prueba de conducción </p>
-        </header>
-        
-        <footer class="flex flex-col flex-grow justify-end pb-20">
-            <div>
-            <a href="#" class="border-[3px] border-white bg-white/5 backdrop-blur-xl text-sm rounded font-medium text-white px-12 py-2 hover:bg-black hover:text-white transition-colors">
-                Explorar inventario
-            </a>
-            <a href="#" class="border-[3px] border-white bg-white/5 backdrop-blur-xl text-sm rounded font-medium text-white px-12 py-2 hover:bg-black hover:text-white transition-colors">
-                Pedido personalizado
-            </a>
-        </div>
-        </footer>
+    <div class="z-30 relative h-full flex items-center">
+      <!-- Carrusel de fotografías (lado izquierdo) -->
+      <div class="w-1/2 h-auto flex items-center pl-10 justify-center">
+        <div class="swiper-container h-96 w-full rounded-lg overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/Actividades.svg" alt="Foto 1" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/seguimiento.webp" alt="Foto 2" class="h-full w-full object-cover" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/reconocimiento.avif" alt="Foto 3" class="h-full w-full object-cover" />
+              </div>
+            </div>
+            <!-- Paginación -->
+            <div class="swiper-pagination"></div>
+            <!-- Botones de navegación -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+      </div>
+  
+      <!-- Características de la app (lado derecho) -->
+      <div class="w-1/2 h-auto flex flex-col items-start justify-center bg-white/10 backdrop-blur-md pl-10 py-10 rounded-lg mx-4">
+        <h2 class="text-white text-4xl font-medium mb-4">
+          Características
+        </h2>
+        <p class="text-white text-sm underline mb-8">
+          Conexión a tus emociones en base a IA
+        </p>
+        <ul class="text-white text-left space-y-4">
+          <li>◦ Análisis de emociones gracias a Mood Tracker</li>
+          <li>◦ Actividades diversas para cada emoción</li>
+          <li>◦ Seguimiento de emociones</li>
+          <li>◦ Reportes de los resultados de las actividades</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="absolute top-0 bottom-0 z-10">
-        <img src="/Model Y.avif" alt="Model Y" class="h-full w-full object-cover">
+  
+    <!-- Imagen de fondo (opcional) -->
+    <div class="absolute top-0 bottom-0 left-0 right-0 z-10">
+      <img src="/fondo2.jpeg" alt="fondo 2" class="h-full w-full object-cover" />
     </div>
-
-</section>
+  </section>
