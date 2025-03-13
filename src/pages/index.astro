@@ -3,18 +3,16 @@ import LandingHeader from '../components/LandingHeader.astro';
 import HeroSection from '../components/HeroSection.astro';
 import Layout from '../layouts/Layout.astro';
 import ChargeSection from '../components/ChargeSection.astro';
-
+---
 
 <Layout>
-	<LandingHeader />
-	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
-
-	<div class="snap-center">
-	<HeroSection />
-	</div>
-	<div class="snap-center">
-	<ChargeSection />
-	</div>
-	
-	</main>
+  <LandingHeader />
+  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ChargeSection />
+    </div>
+  </main>
 </Layout>
